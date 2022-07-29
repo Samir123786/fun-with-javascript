@@ -1,0 +1,35 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.blob{
+    width: 400px;
+    height: 400px;
+    /* background: #fff; */
+    position: absolute;
+    left: 0;
+    
+}
+.blob:nth-child(2){
+    filter: blur(50px);
+}
+.text{
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    color: #fff;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    width: 100px;
+}
