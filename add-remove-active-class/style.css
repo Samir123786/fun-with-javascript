@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(2, 15, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    height: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    /* display: flex; */
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+ul li.active{
+    background-color: rgb(5, 110, 202);
+    transition: 0.3s ease-in-out;
+}
+ul li a {
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+
+}
