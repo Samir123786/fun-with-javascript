@@ -1,0 +1,99 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    animation: img 2s ease;
+    transition: .3s all;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+span{
+    font-size: 5rem;
+    margin-top: 40px;
+    margin: 0 1px;
+    font-family: sans-serif;
+    color: rgb(7, 253, 155);
+    font-weight: bold;
+    position: relative;
+    top: -140px;
+    animation: down .2s ease;
+    transition: .3s all;
+}
+span:nth-child(2){
+    animation: down .3s ease;
+}
+span:nth-child(3){
+    animation: down .4s ease;
+}
+span:nth-child(4){
+    animation: down .5s ease;
+}
+span:nth-child(5){
+    animation: down .6s ease;
+}
+span:nth-child(6){
+    animation: down .7s ease;
+}
+span:nth-child(7){
+    animation: down .8s ease;
+}
+span:nth-child(8){
+    animation: down .9s ease;
+}
+span:nth-child(9){
+    animation: down 1s ease;
+}
+span:nth-child(10){
+    animation: down 1.1s ease;
+}
+span:nth-child(11){
+    animation: down 1.2s ease;
+}
+span:nth-child(12){
+    animation: down 1.3s ease;
+}
+span:nth-child(13){
+    animation: down 1.4s ease;
+}
+span:nth-child(14){
+    animation: down 1.5s ease;
+}
+@keyframes down {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes img {
+    0%{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100%{
+        opacity: 1;
+      transform: scale(1);
+    }
+}
