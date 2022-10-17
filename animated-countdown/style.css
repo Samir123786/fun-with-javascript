@@ -1,0 +1,162 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.counter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.counter.hide{
+   
+    transform: translate(-50%,-50%) scale(0);
+    animation:  hide .3s ease-out;
+   
+}
+@keyframes hide {
+    0%{
+    transform: translate(-50%,-50%) scale(1);
+
+    }
+    100%{
+    transform: translate(-50%,-50%) scale(0);
+
+    }
+    
+}
+h1{
+    font-size: 50px;
+
+}
+.nums{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    overflow: hidden;
+
+}
+.nums span{
+    font-size: 70px;
+font-weight: bold;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: rotate(120deg);
+transform-origin: bottom center;
+color: rgb(14, 139, 248);
+
+}
+.nums span.in{
+
+transform:translate(-50%,-50%) rotate(0deg);
+animation: goin .5s ease-in-out;
+
+}
+@keyframes goin {
+    0%{
+transform:translate(-50%,-50%) rotate(120deg);
+
+    }
+    30%{
+transform:translate(-50%,-50%) rotate(10deg);
+
+    }
+    60%{
+transform:translate(-50%,-50%) rotate(-20deg);
+
+    }
+    100%{
+transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+    
+}
+.nums span.out{
+
+
+animation: goout .5s ease-in-out;
+
+}
+@keyframes goout {
+    0%{
+transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+    30%{
+transform:translate(-50%,-50%) rotate(20deg);
+
+    }
+ 
+    100%{
+transform:translate(-50%,-50%) rotate(-120deg);
+
+    }
+    
+}
+.final{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    text-align: center;
+}
+.final.show{
+   
+    transform: translate(-50%,-50%) scale(1);
+    animation:  show .3s ease-out;
+   
+}
+@keyframes show {
+    0%{
+    transform: translate(-50%,-50%) scale(0);
+
+    }
+    60%{
+    transform: translate(-50%,-50%) scale(1.4);
+
+    }
+    100%{
+    transform: translate(-50%,-50%) scale(1);
+        
+    }
+    
+}
+#replay{
+    padding: 20px 40px;
+    border: none;
+    font-size: 2rem;
+    border-radius: 3px;
+    background-color: rgb(88, 167, 235);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+#replay span{
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+#replay span::after{
+content: "\00bb";
+position: absolute;
+top: 0;
+right: -25px;
+opacity: 0;
+transition: .3s;
+}
+#replay:hover span{
+padding-right: 25px;
+}
+#replay:hover span::after{
+right: 0;
+transition: .3s;
+opacity: 1;
+}
