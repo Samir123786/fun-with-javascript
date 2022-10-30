@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(97, 97, 212);
+}
+.container{
+    width:60%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #777;
+
+}
+.joke{
+    color: #000;
+    font-size:25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding:10px 20px;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    background-color: rgb(141, 106, 201);
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+}
